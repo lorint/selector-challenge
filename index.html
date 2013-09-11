@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>jQuery-like Selector Test Page</title>
+    
+    <script type="text/javascript">
+      // Write a script that will produce the correct results
+      // for the following tests:
+      
+      var $ = function(str) {
+        
+        // output correct dom elements here
+      }
+      
+      console.log($('nav#navbar'));
+      console.log($('#active'));
+      console.log($('.container'));
+      console.log($('#first.bodytext'));
+      console.log($('.bodytext#first'));
+      console.log($('p#first.bodytext'));
+      console.log($('div.bodytext#first')); // returns []
+      console.log($('footer.footer'));
+      console.log($('#footer')); // returns []
+      console.log($('div.fineprint'))
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <a class="active" href="">Home</a> |
+        <a href="">About us</a> |
+        <a href="">Contact us</a> |
+        <a href="">Privacy policy</a> |
+        <a href="">Terms of use</a>
+      </nav>
+    </header>
+    <div class="container">
+      <p id="first" class="bodytext">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue leo et orci tempor, hendrerit blandit quam mattis. Phasellus eget dui lorem. Aliquam sagittis ultrices elit. Nulla facilisi. Nullam est risus, sodales a sem eget, adipiscing lacinia ligula. Nunc turpis lectus, posuere vitae pretium eget, iaculis a ante. Donec consequat elit arcu, non bibendum est accumsan quis. Quisque ligula tortor, feugiat ut semper at, sodales id nibh. Nullam euismod tincidunt sem quis hendrerit.
+      </p>
+      <p class="bodytext">
+        Sed ac porttitor libero. Vivamus facilisis condimentum erat, quis fringilla mi condimentum aliquet. Proin felis elit, feugiat et orci at, auctor adipiscing quam. Nam interdum lorem interdum accumsan tincidunt. Proin ac varius mauris. In eu mi ac eros facilisis fermentum at eu purus. Maecenas lacinia adipiscing ligula quis fringilla. Nunc pellentesque ullamcorper tellus, in feugiat ipsum dignissim ullamcorper. Nam rutrum non nisi ut consequat. Maecenas eget dapibus tortor. Aenean a sagittis turpis, quis vestibulum metus.
+      </p>
+      <p class="bodytext">
+        Sed vitae luctus sapien. Vestibulum tempus metus sed purus tincidunt congue. Integer vitae pellentesque ante. Proin vitae sapien sed ipsum accumsan luctus ut sit amet ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc a leo interdum, faucibus neque ut, tristique ante. Sed pharetra, sapien ac ornare rutrum, massa diam ultrices urna, ac dignissim justo est at nisi. Nam varius, elit sit amet tempor pretium, neque ante pellentesque nibh, in varius nibh nibh ac est. Etiam mollis felis non nibh vehicula, sed tristique elit lobortis. Etiam non fermentum mi. Curabitur venenatis turpis in lectus malesuada mollis. Sed bibendum tristique ante sed blandit.
+      </p>
+      <p class="bodytext">
+        Donec in mi neque. In cursus sapien eu est luctus, et fermentum magna consequat. Donec ornare scelerisque lectus id tincidunt. Aliquam commodo, nisl a blandit interdum, mi ligula consequat turpis, sit amet ultricies orci tellus non ligula. Phasellus eget suscipit urna, sed tincidunt nisi. Nam ut pellentesque dolor. Suspendisse consequat turpis ut interdum aliquet. Fusce consequat mauris ac enim faucibus molestie. Cras ornare nibh neque.
+      </p>
+      <p class="bodytext">
+        Morbi lobortis eros id eros dignissim feugiat. Vestibulum tincidunt risus lectus, at bibendum lacus vestibulum vel. Praesent quis orci accumsan, congue erat eu, elementum libero. Phasellus eu magna diam. Donec imperdiet vel dolor non eleifend. In condimentum, justo at facilisis lacinia, sapien odio fringilla lacus, nec rhoncus enim sem vel mi. Phasellus ornare aliquam orci non mollis. Pellentesque urna justo, commodo non ante eget, placerat pretium tortor. Mauris metus diam, pretium ut molestie quis, sagittis in ante. Pellentesque volutpat nec elit eu euismod. Aliquam consequat elit magna, at euismod massa adipiscing vel. Vestibulum aliquam, lorem a congue sagittis, diam urna blandit erat, sit amet elementum nibh augue sed nisl. Nunc nunc ipsum, venenatis non aliquet sed, porttitor non nunc.
+      </p>
+    </div>
+    <footer class="footer">
+      <div id="copyright" class="fineprint">&copy; 2013 WDI</div>
+    </footer>
+  </body>
+</html>
